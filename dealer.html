@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="header-left">
+                <h1>RENT YOUR CAR</h1>
+                <h3>Renting made easy in just 2 minutes!</h3>
+                <p>
+                    DHEERAJ VANSH JOEL ARNAV BC<br>
+                    DHEERAJ VANSH JOEL ARNAV BC
+                </p>
+            </div>
+            <div class="signin-container">
+                <h2>Add your Details</h2>
+                <form class="signin-form">
+                    <input type="text" placeholder="Car Name" required>
+                    <input type="text" placeholder="Transmission" required>
+                    <input type="text" placeholder="Fuel Type" required>
+                    <input type="text" placeholder="Seats" required>
+                    <input type="text" placeholder="Price/Day" required>
+                    <input type="text" placeholder="Description" required>
+                    <div class="city-selector-dealer">
+                        <label for="city">Select a city: </label>
+                        <select id="city">
+                            <option value="all">All</option>
+                            <option value="city1">Mumbai</option>
+                            <option value="city2">Bengaluru</option>
+                            <!-- Add more cities as needed -->
+                        </select>
+                    </div>
+                    <button type="button" id="submitButton">
+                        <a href="cars.html" class="button-link">Submit</a>
+                    </button>
+                    
+                </form>
+            </div>
+        </div>
+    </header>
+</body>
+<script>
+    function show(anything) {
+        document.querySelector('.textBox').value = anything;
+    }
+
+    let dropdown = document.querySelector('.dropdown');
+    dropdown.onclick = function () {
+        dropdown.classList.toggle('active');
+    }
+
+    // Handle the button click event
+    document.getElementById('submitButton').addEventListener('click', function() {
+        // Get the values from the form inputs
+        const carName = document.querySelector('input[placeholder="Car Name"]').value;
+        const transmission = document.querySelector('input[placeholder="Transmission"]').value;
+        const fuelType = document.querySelector('input[placeholder="Fuel Type"]').value;
+        const seats = document.querySelector('input[placeholder="Seats"]').value;
+        const pricePerDay = document.querySelector('input[placeholder="Price/Day"]').value;
+        const description = document.querySelector('input[placeholder="Description"]').value;
+        const city = document.getElementById('city').value;
+        
+        // Perform the database update or other actions here
+        // You can use JavaScript, AJAX, or another technology to handle the data.
+
+        // Redirect to the cars.html page (replace 'your-path' with the actual path)
+        
+    document.getElementById("submitButton").addEventListener("click", function() {
+        
+    });
+
+    });
+</script>
+</html>
