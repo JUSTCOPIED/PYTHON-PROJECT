@@ -868,3 +868,48 @@ header {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+:root {
+    --color-primary: #1743e3;
+    --color-white: #eaeaea;
+    --color-dark: #333;
+    --color-black: #222;
+}
+
+/* Your existing styles here */
+
+.customer-details-page header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    transform: none; /* Fix the tilt issue */
+}
+
+/* Additional styles for the customer details form */
+.customer-details-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.customer-details-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
