@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,8 @@
             <input type="password" placeholder="Password" required>
             <div class="checkbox-container">
                 <label for="policyCheckbox">
-                    <input type="checkbox" id="policyCheckbox" required><p>I agree to the company's policy</p>
+                    <input type="checkbox" id="policyCheckbox" required>
+                    <p>I agree to the company's policy</p>
                     
                 </label>
             </div>
@@ -29,5 +30,61 @@
         </form>
     </div>
 </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+
+<div class="login-container">
+    <h2>Login</h2>
+    <form class="login-form" id="loginForm">
+        <input type="text" id="usernameInput" placeholder="Username" required>
+        <input type="password" id="passwordInput" placeholder="Password" required>
+        <div class="checkbox-container">
+            <label for="policyCheckbox">
+                <input type="checkbox" id="policyCheckbox" required>
+                <p>I agree to the company's policy</p>
+            </label>
+        </div>
+        <button type="submit">Login</button>
+        <div class="or-divider">
+            <hr>
+            <span>or</span>
+        </div>
+        <button type="button" class="signin-button" onclick="location.href='singin.html'">Sign In</button>
+    </form>
+    <button class="return-home-button" onclick="location.href='index.html'">Return to Homepage</button>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const loginForm = document.getElementById("loginForm");
+
+        loginForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const username = document.getElementById("usernameInput").value;
+            const password = document.getElementById("passwordInput").value;
+
+            // Check if the credentials are correct (You can replace this with your validation logic)
+            if (username === "123" && password === "123") {
+                // Redirect to the dealer page
+                window.location.href = "dealer-home.html";
+            } else {
+                // Display an alert for wrong credentials
+                alert("Wrong credentials. Please try again.");
+            }
+        });
+    });
+</script>
+</body>
 </html>
+
+
 

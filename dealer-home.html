@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Dealer Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include your stylesheets and scripts here -->
+</head>
+<body>
+    <nav class="navbar slide-in">
+        <div class="container">
+            <h1 class="logo">Car Dealer Portal</h1>
+            <p class="dealer-name">(dealer name)</p> <!-- Add the dealer's name here -->
+            <ul class="nav-links">
+                <li><a href="index.html">Logout</a></li>
+                <li><a href="cars.html">Market</a></li>
+                <li><a href="signin.html">Vehicles</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <h3 class="page-title slide-in">Vehicle's Order List & History</h3>
+    <div class="table-container slide-in">
+        <table class="order-table slide-in">
+            <tr>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Rental Amount</th>
+                <th>Days</th>
+                <th>Seat</th>
+                <th>Action</th>
+            </tr>
+            <!-- Sample order data, replace with actual data -->
+            <tr>
+                <td>Lamborghini Aventador</td>
+                <td>White</td>
+                <td>$25,000</td>
+                <td>3</td>
+                <td>2</td>
+                <td>
+                    <form action="/car_dealer_portal/complete/" method="post">
+                        <input type="hidden" name="id" value="1">
+                        <button class="complete-button">Complete</button>
+                    </form>
+                </td>
+            </tr>
+            
+            <!-- Repeat this block for each order -->
+        </table>
+    </div>
+    
+    <!-- Add a button that links to the "add car" page -->
+    <a href="dealer.html" class="add-car-button slide-in">Add a Car</a>
+</body>
+</html>
+<script>
+    // Wait for the page to load
+    document.addEventListener("DOMContentLoaded", function () {
+        // Add the "animated" class to trigger the animation
+        const elementsToAnimate = document.querySelectorAll(".slide-in");
+        elementsToAnimate.forEach((element) => element.classList.add("animated"));
+    });
+</script>

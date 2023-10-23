@@ -358,6 +358,25 @@ body.signin-page {
 }
 
 
+@keyframes formAni{
+    0%{
+        transform: translateY(-100px) ;
+        opacity: 0;
+    }    
+    100%{
+        transform: translateY(0) ;
+        opacity: 1;
+    }    
+}
+
+.signin-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
 /* CARDS KA CODE */
 /* Modify the car-card class */
 /* Add animation classes */
@@ -461,7 +480,6 @@ body.signin-page {
 
 
 /* LOGIN KA CODE */
-
 body.login-page {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -477,14 +495,14 @@ body.login-page {
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px; /* Increase padding for a little more space */
-    width: 400px; /* Adjust the width as needed */
+    padding: 20px;
+    width: 400px;
     text-align: center;
-    max-width: 90%; /* Make the container responsive */
+    max-width: 90%;
 }
 
 .login-container h2 {
-    margin-bottom: 20px; /* Adjust margin as needed */
+    margin-bottom: 20px;
 }
 
 .login-form input {
@@ -519,41 +537,22 @@ body.login-page {
     white-space: nowrap;
 }
 
-/* Customize your styles here */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+/* Styling for Return to Homepage Button */
+.return-home-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Change the background color as needed */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 15px; /* Add margin to separate the button from the form */
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.return-home-button:hover {
+    background-color: #0056b3; /* Change the background color on hover if desired */
 }
 
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-left {
-    flex: 1;
-}
-
-.signin-container {
-    flex: 1;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    text-align: center;
-}
 /* dealer page code */
 * {
     margin: 0;
@@ -620,7 +619,44 @@ header {
     justify-content: space-between;
 }
 
-/* Sign-in form styles */
+/* Sign-in styles */
+
+
+/* Styling for Go Back Button */
+/* Your existing CSS styles */
+
+/* Styling for Go Back Buttons */
+.go-back-button,
+.go-home-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 15px; /* Add margin to separate the button from the form */
+}
+
+.go-back-button {
+    background-color: #007bff; /* Match the color with other buttons */
+    color: #fff;
+}
+
+.go-back-button:hover {
+    background-color: #0056b3; /* Change the background color on hover to match other buttons */
+}
+
+.go-home-button {
+    background-color: #ff8c00; /* Custom color for the "Go to Home Page" button */
+    color: #fff;
+}
+
+.go-home-button:hover {
+    background-color: #ff6f00; /* Change the background color on hover */
+}
+
+/* Additional styling for the signin page if needed */
+
+
 
 .signin-container {
     background-color: #fff;
@@ -630,7 +666,7 @@ header {
     width: 400px;
     text-align: center;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 610px;
     height: 550px;
 }
 
@@ -709,4 +745,126 @@ header {
     margin-top: 10px;
 }
 
+/* Your existing CSS styles go here */
 
+/* Updated styles for the navigation bar */
+.navbar {
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: 10px 0;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links li a.active {
+    font-weight: bold;
+}
+
+/* Updated styles for the page title and table container */
+.page-title {
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+}
+.table-container {
+    max-width: 800px;
+    margin: 40px auto; /* Lower the table by 40px and center it */
+}
+
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order-table th, .order-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 2px solid var(--color-dark);
+}
+
+.order-table th {
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-weight: bold;
+}
+
+.complete-button {
+    background: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.complete-button:hover {
+    background: var(--color-dark);
+}
+.page-title {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 24px;
+    color: var(--color-primary);
+}
+
+.add-car-button {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 12px 28px;
+    background: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: var(--color-white);
+    font-weight: 600;
+    text-decoration: none; /* Remove underlines for links */
+    text-align: center;
+}
+
+.add-car-button:hover {
+    background: transparent;
+    color: var(--color-primary);
+}
+
+.dealer-name {
+    font-size: 18px;
+    color: var(--color-white);
+    text-align: center;
+}
+/* Add slide-in animation to elements */
+.slide-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+/* Define the animation for slide-in */
+.slide-in.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
