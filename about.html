@@ -12,11 +12,13 @@
 </head>
 <body>
         <!-- ..................Start Navbar................... -->
+<
         <nav>
             <div class="container nav-container">
                 <a href="" class="logo"><h3>AutoElegance.</h3></a>
                 <ul class="nav-link">
                     <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
                     <li><a href="Login.html">login</a></li>
                     
                 </ul>
@@ -47,56 +49,85 @@
                     <h3>Welcome to AutoElegance, an car renting service project developed by our team compring of Dheeraj, Joel, Alen, Arnav, and Vansh, each contributing their unique skills and expertise to bring this project to life!! </h3>
 <br>
 <br>
- <h1>Project Overview</h1>
+ <h2>Project Overview</h2>
 
 <h3> AutoElegance was born out of our passion for cars and our desire to create an innovative platform for car dealers and customers. We aimed to streamline the car buying and renting process, offering a seamless experience to users! </h3>
 <br>
 <br>
- <h1>Development Process</h1>
+ <h2>Development Process</h2>
 <h3> Our project was built using a stack of cutting-edge technologies, including Django for the backend, and HTML and CSS for the front end. The collaborative nature of our work allowed us to combine our skills effectively, resulting in a powerful and user-friendly application. </h3>
 <h3> AutoElegance was born out of our passion for cars and our desire to create an innovative platform for car dealers and customers. We aimed to streamline the car buying and renting process, offering a seamless experience to users! </h3>
 <br>
 <br>
- <h1>Roles</h1>
+ <h2>Roles</h2>
 <h3> Dheeraj, was primarily responsible for the development of the Django backend, coding most of the backend functionalities, ensuring that the application runs smoothly. </h3>
 <br>
 <br>
-<h1>Database Implementation - Arnav</h1>
+<h2>Database Implementation - Arnav</h2>
 <h3> Arnav played a pivotal role in implementing the database infrastructure of our project ensuring that our application stores and retrieves data efficiently. </h3>
 <br>
 <br>
-<h1>Front-End Development - Alen, Joel and Vansh</h1>
+<h2>Front-End Development - Alen, Joel and Vansh</h2>
 <h3> Alen, Joel and Vansh were instrumental in shaping the project's front end. Their collective efforts in designing the user interface, enhancing user experience, and crafting the visual elements have significantly contributed to the project's success. </h3>
 <br>
 <br>
-<h1>Challenges and Learning</h1>
+<h2>Challenges and Learning</h2>
 <h3> Throughout our project journey, we encountered challenges that demanded creative problem-solving. These obstacles became opportunities for learning, and we are proud of the new skills and knowledge we gained.</h3>
 <br>
 <br>
-<h1>Future Plans</h1>
+<h2>Future Plans</h2>
 <h3> We have ambitious plans for the future of AutoElegance. Stay tuned for updates, improvements, and enhancements as we strive to provide the best possible experience for our users.</h3>
 <br>
 <br>
-                    <h1>Contact Information</h1>
-<h3> If you wish to learn more about our project or get in touch with our team, please visit our project repository [Insert link] or reach out to us individually:</h3>
+                    <h2>Contact Information</h2>
+<h3> If you wish to learn more about our project or get in touch with our team, please visit our project repository <a href="https://github.com/JUSTCOPIED/PYTHON-PROJECT.git">click here</a> or reach out to us individually:</h3>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+ 	
                
             
         </header>
         <!-- ..................End Header Section................... -->
 </body>
 
-
-
-
-
-
-
-
-
-
-
+ <footer>
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="awesome">
+      <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+      <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+      <li><a href="https://www.instagram.com/iallenmathew/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+    </ul>
+    <ul class="menu">
+      <li><a href="">HOME</a></li>
+      <li><a href="">ABOUT</a></li>
+      <li><a href="">LOGIN</a></li>
+    </ul>
+     <p>©2023 AutoElegance | All Rights Reserved</p>
+    <p> Made with&nbsp;
+    <i class="fa-sharp fa-solid fa-heart"></i> &nbsp;by 
+      <a class="love" href="https://www.instagram.com/iallenmathew">ALLEN , ARNAV , DHREERAJ , JOEL & VANSH </a>  </p>
+    </footer>
+<script src="https://kit.fontawesome.com/f723ba69ca.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  
 </html>
 
 
@@ -151,6 +182,11 @@ nav{
     z-index: 100;
     display: grid;
     place-items: center;
+    background:black;
+}
+
+nav.hide {
+	transform: translateY(-60.7vh);
 }
 .nav-container{
     display: flex;
@@ -164,12 +200,12 @@ nav{
 }
 .logo h3{
     font-size: 25px;
-    color: var(--color-black); 
+    color: var(--color-white); 
     opacity: 0;
     animation: logoAni 1s ease forwards;   
 }
 .nav-link li a{
-    color: var(--color-black);
+    color: var(--color-white);
     font-size: 17px;
     transition: .4s ease;
     display: inline-block;
@@ -222,13 +258,22 @@ header{
     position: relative;
 }
 .header-left h1{
-    font-size: 54px;
+    font-size: 60px;
     line-height: 1.2;
     color: var(--color-black);
     animation: H1Ani forwards 1s ease;  
     opacity: 0;    
     animation-delay: 1s;  
 }
+
+.header-left h2{
+    font-size: 35px;
+    line-height: 1.2;
+    color: var(--color-black);
+    animation: H1Ani forwards 1s ease;  
+    opacity: 0;    
+    animation-delay: 1s;  
+} 
 .header-left h3{
     
     font-size: 28px;
@@ -378,9 +423,199 @@ header{
   }
 
 
+  
+footer {
+  position:absolute;
+  right:0;
+  left:0;
+  bottom:100;
+  width:100%;
+  background:#3586ff;
+  min-height:100px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+
+footer .awesome,
+footer .menu 
+{
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:10px 0;
+}
+
+footer .awesome li,
+footer .menu li
+{
+  list-style:none;
+}
+
+footer .awesome li a
+{
+  font-size:2em;
+  color:#fff;
+  margin:0 10px;
+  display:inline-block;
+  transition:0.5s;
+}
+
+footer .menu li a 
+{
+  font-size:1.1em;
+  color:#fff;
+  margin:0 10px;
+  display:inline-block;
+  text-decoration:none;
+  opacity:0.75;
+}
+
+footer .awesome li a:hover{
+  transform:translateY(-10px);
+}
+
+footer .menu li a:hover{
+  opacity:1;
+}
+
+footer p{
+  color:#fff;
+  margin-top:15px;
+  margin-bottom:10px;
+  text-align:center;
+  font-size:1.1em;
+}
+
+footer .wave{
+  position:absolute;
+  top:-100px;
+  left:0;
+  width:100%;
+  height:100px;
+  background:url("file:///C:/Users/alenk/Downloads/wave.png");
+  background-size:1000px 100px;    
+}
+
+footer .wave#wave1{
+  z-index:1000;
+  opacity:1;
+  bottom:0;
+  animation: animatewave 4s linear infinite;
+}
+
+footer .wave#wave2{
+  z-index:999;
+  opacity:0.5;
+  bottom:10px;
+  animation: animatewave_02 4s linear infinite;
+}
+
+footer .wave#wave3{
+  z-index:1000;
+  opacity:0.2;
+  bottom:15px;
+  animation: animatewave 3s linear infinite;
+}
+
+footer .wave#wave4{
+  z-index:999;
+  opacity:0.7;
+  bottom:20px;
+  animation: animatewave_02 3s linear infinite;
+}
+
+@keyframes animatewave{
+  0%
+  {
+    background-position-x:1000px;
+  }
+  100%
+  {
+    background-position-x:0px;
+  }
+}
 
 
+@keyframes animatewave_02{
+  0%
+  {
+    background-position-x:0px;
+  }
+  100%
+  {
+    background-position-x:1000px;
+  }
+}
+
+  
+------------------
+footer a{
+  color:#000;
+  text-decoration:none;
+  }
+
+footer i{
+    color: #E90606;
+    animation: pound .35s infinite alternate;
+    -webkit-animation: pound .35s infinite alternate;
+}
+
+@-webkit-keyframes pound{
+  to{
+    transform: scale(1.3);
+}
+}
+
+
+@keyframes pound{
+  to{
+    transform: scale(1.3);
+  }
+}
+  
+   
+  a.love{
+  color:white;
+  text-decoration:none; 
+  font-weight:bold;
+}
+ 
+  
+  
+ 
+  img { 
+    width: 1150px;
+    display:block; 
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  
+  footer .wave{
+  position:absolute;
+  top:-100px;
+  left:0;
+  width:100%;
+  height:100px;
+  background:url("C:\my code\vs code\python project\images\BG-IMG.png");
+  background-size:1000px 100px;    
+}
 
 
 
 </style>
+
+
+<script>
+		let prevScrollPos = window.pageYOffset;
+		window.onscroll = () => {
+			let currentScrollPos = window.pageYOffset;
+			prevScrollPos < currentScrollPos
+				? document.querySelector("nav").classList.add("hide")
+				: document.querySelector("nav").classList.remove("hide");
+			prevScrollPos = currentScrollPos;
+		};
+	</script>
